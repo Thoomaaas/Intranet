@@ -1,18 +1,14 @@
-import "./css/Aleatoire.css";
+import "./css/Liste.css";
 import logo from "../assets/morg.png" 
 import APIService from "../services/APIService";
 
 
-
-
-const Aleatoire = ({collaborator}) => {
- 
-
+const Liste = ({collaborator}) => {
+   
     return (
       <div>
-<div className="wrapper">
-<h1>NOTRE EQUIPE</h1>
-  <h2>La plate-forme de l'entreprise qui vous permet de retrouver tous nos collaborateurs</h2>
+    
+    <div className="wrapper2">
   <div className="team">
     <div className="team_member">
       <div className="team_img">
@@ -27,11 +23,9 @@ const Aleatoire = ({collaborator}) => {
 
   </div>
 </div>
-
-<button className="random">Voir quelqu'un d'autre</button>
     
-    </div>
+</div>
     );
     };
     
-    export default Aleatoire;
+    export default Liste;

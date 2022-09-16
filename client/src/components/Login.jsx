@@ -1,25 +1,51 @@
 import "./css/login.css";
 import { Link } from "react-router-dom";
+import React, { useState } from 'react'
 
-const Login = () => {
+async function LoginUser(log) {
+  let response = await fetch("http://localhost:7000/api/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(log),
+  });
+
+  if (response.status == 200) {
+    let data = await response.json();
+    console.log(data.token);
+    localStorage.setItem("token", data.token);
+  }
+}
+
+function Login() {
+  const [mail, setMail] = useState();
+  const [password, setPassword] = useState();
+  const submit = async (e) => {
+    e.preventDefault();
+    const data = await LoginUser({
+      email: mail,
+      password: password,
+    });
+    window.location = "/aleatoire";
+  };
+
     
 return (
   <div>
 
-<div class="login-box">
+<div className="login-box">
   <h2>Login</h2>
-  <form>
-    <div class="user-box">
-      <input type="text" name="" required="/"/>
+  <form onSubmit={submit}>
+    <div className="user-box">
+      <input onChange={(e) => setMail(e.target.value)} type="email" />
       <label>Email</label>
     </div>
-    <div class="user-box">
-      <input type="password" name="" required=""/>
+    <div className="user-box">
+      <input onChange={(e) => setPassword(e.target.value)} type="password"/>
       <label>Mot de passe</label>
     </div>
-    <a href="#">
-      <Link to={`/aleatoire`}>se connecter</Link>
-    </a>
+      <button type="submit">se connecter</button>
   </form>
 </div>
 

@@ -1,7 +1,14 @@
 import "./css/Navbar.css";
-import logo from "../assets/morg.png" 
+import logo from "../assets/morg.png"
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+
+function Deconnect(){
+  localStorage.clear()
+  window.location = "/";
+}
+
+function Navbar() {
     
 return (
   <div>
@@ -9,10 +16,10 @@ return (
  <img className="logo" src={logo} alt="logo"/>
  <nav>
     <ul className="nav_links">
-        <li><a href="#">Liste</a></li>
+      <Link to="/Liste"><li>Liste</li></Link>
     </ul>
  </nav>
- <a className="cta" href="#"><button>Deconnexion</button></a>
+ <button className="cta" onClick={Deconnect}>Deconnexion</button>
 </header> 
 
 </div>
