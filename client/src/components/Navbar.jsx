@@ -1,5 +1,5 @@
 import "./css/Navbar.css";
-import logo from "../assets/morg.png"
+import logo from "../assets/Intranet.png" 
 import { Link } from 'react-router-dom';
 
 
@@ -19,7 +19,7 @@ return (
       <Link to="/Liste"><li>Liste</li></Link>
     </ul>
  </nav>
- <button className="cta" onClick={Deconnect}>Deconnexion</button>
+ <button onClick={Deconnect}>Deconnexion</button>
 </header> 
 
 </div>

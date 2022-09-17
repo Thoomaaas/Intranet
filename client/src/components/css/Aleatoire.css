@@ -73,3 +73,8 @@
   border-radius: 50%;
 
 }
+
+.random{
+  display: block;
+   margin : auto;
+}

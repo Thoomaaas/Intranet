@@ -22,6 +22,8 @@ function FirstPage () {
         <div className="FirstPage">
             <Navbar/>
             {randomCollaborator && <Aleatoire collaborator={randomCollaborator} />}
+            <button className="random" onClick={getRandom}>Voir quelqu'un d'autre</button>
+
         </div>
     )
 }

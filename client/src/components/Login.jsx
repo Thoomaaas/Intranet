@@ -38,11 +38,11 @@ return (
   <h2>Login</h2>
   <form onSubmit={submit}>
     <div className="user-box">
-      <input onChange={(e) => setMail(e.target.value)} type="email" />
+      <input onChange={(e) => setMail(e.target.value)} type="email"  placeholder="Ex: abc@gmail.com"/>
       <label>Email</label>
     </div>
     <div className="user-box">
-      <input onChange={(e) => setPassword(e.target.value)} type="password"/>
+      <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Mot de passe"/>
       <label>Mot de passe</label>
     </div>
       <button type="submit">se connecter</button>

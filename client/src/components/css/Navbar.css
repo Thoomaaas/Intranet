@@ -15,12 +15,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 0px 10%;
 
 }
  .logo{
     cursor: pointer;
-    width: 7%;
+    width: 13%;
     margin-right: auto;
  }
 
@@ -42,18 +42,18 @@ padding: 0 20px;
   }
 
 button{
-    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer; 
     transition: all 0.3s ease 0s;
-
 }
 
+
+
 button:hover{
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: rgba(3, 120, 150, 0.8);
 }
 
 

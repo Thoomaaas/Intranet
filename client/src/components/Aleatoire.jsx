@@ -1,8 +1,5 @@
 import "./css/Aleatoire.css";
-import logo from "../assets/morg.png" 
 import APIService from "../services/APIService";
-
-
 
 
 const Aleatoire = ({collaborator}) => {
@@ -27,8 +24,6 @@ const Aleatoire = ({collaborator}) => {
 
   </div>
 </div>
-
-<button className="random">Voir quelqu'un d'autre</button>
     
     </div>
     );

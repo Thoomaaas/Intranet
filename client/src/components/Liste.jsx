@@ -18,7 +18,7 @@ const Liste = ({collaborator}) => {
       <p className="role">{collaborator.city}, {collaborator.country}</p>
       <p>{collaborator.email}</p>
       <p>{collaborator.phone}</p>
-      <p>Anniversaire: {collaborator.birthdate}</p>
+      <p>{collaborator.birthdate}</p>
     </div>
 
   </div>
