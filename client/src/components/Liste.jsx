@@ -14,6 +14,7 @@ const Liste = ({collaborator}) => {
       <div className="team_img">
         <img src={collaborator.photo} alt="Team_image"/>
       </div>
+      <p>{collaborator.service}</p>
       <h3>{collaborator.firstname} {collaborator.lastname}</h3>
       <p className="role">{collaborator.city}, {collaborator.country}</p>
       <p>{collaborator.email}</p>

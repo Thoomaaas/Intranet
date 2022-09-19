@@ -2,6 +2,8 @@ import Navbar from './Navbar'
 import Liste from './Liste';
 import { useState, useEffect } from "react";
 import APIService from "../services/APIService";
+import "./css/Liste.css";
+
 
 
 function SecondPage () {
@@ -21,9 +23,11 @@ function SecondPage () {
     return(
         <div className="SecondPage">
             <Navbar/>
+            <div className='row'>
             {collaborators.map((collaborator) => (
               <Liste collaborator={collaborator} key={collaborator.id} />
             ))}
+            </div>
         </div>
     )
 }

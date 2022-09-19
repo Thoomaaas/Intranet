@@ -1,8 +1,14 @@
 .wrapper2{
-    margin-top: 10%;
+    margin-top: 20%;
     
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
 
